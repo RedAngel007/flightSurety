@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>FlightSurety</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="menu-bar">
+        <div>Flight Surety App</div>
+        <div class="menu-content-inner">Operational Status :</div>
+        <div id="online">Online</div>
+        <div id="offline">Offline</div>
+      </div>
+
+      <div class="flex-body">
+        <div class="left">
+          <div class="inner-section">
+            <div class="title">Register Airline</div>
+            <div class="form-components">
+              <div class="label">
+                <label class="form">Registered By</label>
+              </div>
+              <div class="inner-form">
+                <select class="fixed" name="registeredBy" id="registered-by-address" ></select>
+
+              </div>
+            </div>
+            <div class="form-components">
+              <div class="label">
+                <label class="form">Airline Address</label>
+              </div>
+              <div class="inner-form">
+                <input type="text" id="airline-to-register" /> <br />
+              </div>
+              <btn class="btn btn-primary" id="register-airline">
+                Register Airline
+              </btn>
+            </div>
+          </div>
+         <div class="inner-section">
+            <div class="title">Register Flight</div>
+            <div class="form-components">
+              <div class="label">
+                <label class="form">Airline Address</label>
+              </div>
+
+              <div class="inner-form">
+                <select class="fixed" name="flightRegisteredBy" id="fight-airline-address" ></select>
+              </div>
+            </div>
+            <div class="form-components">
+              <div class="label">
+                <label class="form">Flight Number</label>
+              </div>
+              <div class="inner-form">
+                <input type="text" id="flight-number" /> <br />
+              </div>
+              <btn class="btn btn-primary" id="register-flight">
+                Register Flight
+              </btn>
+            </div>
+          </div>
+
+          <div class="inner-section">
+            <div class="title">Purchase Insurance</div>
+            <div class="form-components">
+              <div class="label">
+                <label class="form">Flight Number</label>
+              </div>
+              <div class="inner-form">
+                <input name="fightAirline" id="insurance-flight"/>
+              </div>
+            </div>
+             <div class="form-components">
+              <div class="label">
+                <label class="form">Address</label>
+              </div>
+              <div class="inner-form">
+                <input type="text" id="insurance-address" /> <br />
+              </div>
+            </div>
+            <div class="form-components">
+              <div class="label">
+                <label class="form">Insurance Amount</label>
+              </div>
+              <div class="inner-form">
+                <input type="text" id="insurance-amount" /> <br />
+              </div>
+              <btn class="btn btn-primary" id="purchase-insurance">
+                Purchase Insurance
+              </btn>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="inner-section">
+            <div class="title">Airlines</div>
+            <div id="airlines">
+              <div class="table-headers table-row" id="registered-airlines-table">
+                <div class="table-cell table-cell-1">
+                  Address
+                </div>
+                <div class="table-cell table-cell-2">
+                  Status
+                </div>
+                <div class="table-cell table-cell-3 table-action">
+                  Action
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="inner-section">
+            <div class="title">Flights</div>
+            <div id="flights">
+              <div class="table-headers table-row" id="registered-airlines-table">
+                <div class="table-cell table-cell-1">
+                  Airline
+                </div>
+                <div class="table-cell table-cell-2">
+                  Number
+                </div>
+                <div class="table-cell table-cell-2">
+                  Status
+                </div>
+                <div class="table-cell table-cell-3 table-action">
+                  Action
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-section">
+            <div class="title">Insured Passengers</div>
+            <div id="passengers">
+            <div class="table-headers table-row">
+                 <div class="table-cell table-cell-1">
+                  Passenger Address
+                </div>
+                <div class="table-cell table-cell-2">
+                  Flight Number
+                </div>
+                <div class="table-cell table-cell-2">
+                  Insured Amount
+                </div>
+                <div class="table-cell table-cell-3 table-action">
+                  Status
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="inner-section">
+            <div class="title">Passengers Balance</div>
+            <div id="passenger-balances">
+            <div class="table-headers table-row">
+                 <div class="table-cell table-cell-1">
+                  Passenger Address
+                </div>
+                <div class="table-cell table-cell-2">
+                  Amount
+                </div>
+                <div class="table-cell table-cell-3 table-action">
+                  Action
+                </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      function reload() {
+        window.location.reload()
+      }
+    </script>
+  </body>
+</html>

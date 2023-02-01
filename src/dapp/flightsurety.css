@@ -1,0 +1,180 @@
+body {
+  background-image: url('flight.jpg'); /* Source: iStockPhoto */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.defaultFont {
+  font-size: 14px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: beige;
+  height: 4em;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
+}
+.table-action {
+
+}
+
+.table-action  btn{
+  min-width: 1.5em;
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+.menu-content-inner {
+  padding-left: 10em;
+}
+
+.menu-content-inner-state {
+  padding-left: 0.5em;
+}
+
+#offline {
+  color: rgb(228, 77, 77);
+  font-weight: bold;
+  padding-left: 0.5em;
+}
+#online {
+  color: rgb(104, 162, 216);
+  font-weight: bold;
+  padding-left: 0.5em;
+}
+
+.flex-body {
+  margin-top: 3em;
+  opacity: 0.9;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+.left {
+  width: 40%;
+  background-color: rgb(240, 240, 242);
+  margin: 2em 0 2em 2em;
+  padding: 0em 1em;
+  padding-bottom: 1em;
+  flex-direction: column;
+}
+
+.right {
+  width: 60%;
+  background-color: rgb(240, 240, 242);
+  margin: 2em 2em 2em 1em;
+  padding: 0em 1em;
+  padding-bottom: 1em;
+  flex-direction: column;
+}
+
+.inner-section {
+  background-color: rgb(95, 95, 99);
+  padding: 1em;
+  display:flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.form-components {
+  display: flex;
+}
+
+.label {
+  width:8em;
+}
+.top-20 {
+  margin-top: 20px;
+}
+
+h5 {
+  color: #999999;
+}
+
+section {
+  margin-bottom: 50px;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.table-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0.5em;
+
+}
+.table-row-data {
+  display: flex;
+  flex-direction: row;
+    padding-bottom: 0.5em;
+
+}
+
+
+.table-cell-1{
+  width: 40%;
+  padding-right: 2em;
+}
+
+.table-cell-2{
+  width: 20%;
+}
+
+.table-cell-3 {
+  width: 20%;
+}
+
+.status {
+  color: rgb(187, 241, 241);
+}
+
+
+.field {
+  font-weight: bold;
+  text-align: right;
+}
+
+
+.table-cell
+.field-value {
+  font-size: 12px;
+}
+
+label.form {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+input {
+  margin-right: 20px;
+  min-width: 13em;
+  margin-bottom: 0.2em;
+}
+
+select.fixed {
+  width: 25.7em;
+  font-size: 14px;
+ -moz-appearance:none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+
+
+
